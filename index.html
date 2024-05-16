@@ -14,41 +14,35 @@
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    </head>
    <body>
-        <header class="header" id="homeheader">
-
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
-                
+                <a class="navbar-brand" href="#">Duc Quoc Nguyen</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-        </header>
+        </nav>
+    
         
         <!-- HERO SECTION-->
-        <div class="px-4 py-5 mb-5 text-center bg-light">
-            <h1 class="display-5 fw-bold">Centered hero</h1>
-            <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-            </div>
-            </div>
+        <div class="blackhole-container">
+            <video autoplay muted loop class="blackhole"><source src="img/blackhole.mp4" type="video/mp4"/></video>
+            <h1>Hello World</h1>
         </div>
 
-        <!-- THREE COLUMNS -->
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-4 px-5 my-3">
-                    <img src="img/placeholder.png" class="img-fluid rounded-circle mb-3 feature">
-                    <h5>Column</h5>
-                </div>
-                <div class="col-sm-4 px-5 my-3">
-                        <img src="img/placeholder.png" class="img-fluid rounded-circle mb-3 feature">
-                        <h5>Column</h5>
-                </div>
-                <div class="col-sm-4 px-5 my-3">
-                    <img src="img/placeholder.png" class="img-fluid rounded-circle mb-3 feature">
-                    <h5>Column</h5>
-                </div>
-            </div>
-        </div>
+        
    </body>
 </html>

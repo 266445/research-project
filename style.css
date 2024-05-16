@@ -1,1 +1,36 @@
+body {
+    background-color: black;
+}
+
+
+
+.navbar-dark .navbar-brand {
+    color: white;
+    opacity: 1;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.blackhole-container {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding-top:70px;
+}
+
+
+.blackhole {
+    position: absolute;
+    left:0;;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+    
+}
+
 
