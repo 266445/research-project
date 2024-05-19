@@ -1,48 +1,183 @@
 <!DOCTYPE html>
 <html>
-   <head>
-       <meta charset="utf-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <title></title>
-       <meta name="description" content="">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <!-- STYLE SHEETS -->
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-<link rel="stylesheet" href="style.css">
-       <!-- JAVASCRIPT -->
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-   </head>
-   <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-            <div class="container">
-                <a class="navbar-brand" href="#">Duc Quoc Nguyen</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero" id="hero">
+        <video class="bg-video" autoplay loop muted playsinline>
+            <source src="img/blackhole.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <nav>
+            <img src="img/space.png" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">LIST</a></li>
+            </ul>
         </nav>
-    
-        
-        <!-- HERO SECTION-->
-        <div class="blackhole-container">
-            <video autoplay muted loop class="blackhole"><source src="img/blackhole.mp4" type="video/mp4"/></video>
-            <h1>Hello World</h1>
+        <div class="content">
+            <h1>SPACE</h1>
+            <a href="#solar">EXPLORE</a>
         </div>
+    </div>
+    <div class="break"></div>
+    
+    <div class="solar" id="solar">  
+        <h1 class="solartitle">SOLAR SYSTEM</h1>
+        <div class="solar-content">
+            <p>The solar system is a dynamic arrangement of celestial bodies orbiting the Sun. 
+            It comprises eight planets, including Earth, each with its own distinct characteristics. 
+            Additionally, moons, dwarf planets like Pluto, asteroids, and comets populate this cosmic neighborhood. 
+            Understanding the solar system sheds light on the processes governing planetary formation and evolution, offering insights into the broader cosmos.</p>
+        </div>
+            
+    
+        <div class="solarphoto">
+            <img class="solarpic" src="img/solarsystem.jpg">
+        </div>
+    </div>
+    
+    <div class="break"></div>
+    <div class="sun" id="sun">  
+        <h1 class="suntitle">THE SUN</h1>
+        <div class="sun-content">
+            <div class="sunfact">
+                <p class="fact1">The Sun, a G-type main-sequence star, is located at the center of our solar system. It comprises more than 99.8% of the total mass of the solar system.</p>
+            </div>
+            <div class="sunfact">
+                <p class="fact2">With a diameter of about 1.4 million kilometers, the Sun is about 109 times larger than Earth. Its volume could fit approximately 1.3 million Earths within its bounds.</p>
+            </div>
+            <div class="sunfact">
+                <p class="fact3">The surface temperature of the Sun reaches scorching heights of approximately 5,500 degrees Celsius (9,932 degrees Fahrenheit). However, temperatures can vary across its layers, with the core blazing at over 15 million degrees Celsius (27 million degrees Fahrenheit).</p>
+            </div>
+            <div class="sunfact">
+                <p class="fact4">The Sun's energy is primarily generated through nuclear fusion in its core. Here, hydrogen atoms fuse to form helium, releasing immense amounts of energy in the process. This energy is then radiated outward in the form of heat and light.</p>
+            </div>
+            <div class="sunfact">
+                <p class="fact5">Sunlight, a vital source of energy for life on Earth, takes about eight minutes and 20 seconds to travel the 93 million miles (150 million kilometers) to reach our planet. This constant stream of solar energy drives Earth's climate, weather patterns, and photosynthesis in plants.</p>
+            </div>
+        </div>
+        <div class="sunphoto">
+            <img class="sunpic" src="img/sun.jpeg">
+        </div>
+        
+    </div>
+
+    <div class="break"></div> 
+    <div class="planets" id="planets">  
+        <h1 class="planetstitle">THE PLANETS</h1>
+        <div class="planet-content">
+            <div class="planetfact">
+                <p class="Mercury">Mercury is the closest planet to the Sun and has the most extreme temperature variations, with surface temperatures ranging from -173°C (-280°F) at night to 427°C (800°F) during the day.</p>
+            </div>
+            <div class="planetfact">
+                <p class="Venus">Venus has a thick atmosphere composed mainly of carbon dioxide, which traps heat and creates a runaway greenhouse effect. This makes Venus the hottest planet in our solar system, even hotter than Mercury, despite being farther from the Sun.</p>
+            </div>
+            <div class="planetfact">
+                <p class="Earth">Earth, our home planet, stands out in the solar system for its abundance of liquid water, oxygen-rich atmosphere, and strong magnetic field, which shield it from harmful solar radiation. Its dynamic geology, marked by tectonic activity and diverse ecosystems, fosters a rich tapestry of life forms, from microscopic organisms to majestic creatures.</p>
+            </div>
+            <div class="planetfact">
+                <p class="Mars">Mars is home to the tallest volcano and the deepest canyon in the solar system. Olympus Mons, a shield volcano, towers over the Martian surface at a height of 21.9 km (13.6 mi), while Valles Marineris stretches across 4,000 km (2,500 mi) and reaches depths of up to 7 km (4.3 mi).</p>
+            </div>
+            <div class="planetfact">
+                <p class="Jupiter">Jupiter is the largest planet in our solar system and has a powerful magnetic field that generates intense radiation belts. Its iconic feature is the Great Red Spot, a massive storm that has been raging for at least 400 years and is larger than Earth.</p>
+            </div>
+            
+        </div>       
+
+        <div class="planet-content2">
+            <div class="planetfact">
+                <p class="Saturn">Saturn is known for its stunning ring system, composed of ice particles ranging in size from tiny grains to large boulders. These rings extend hundreds of thousands of kilometers from the planet's surface but are only about 20 meters thick.</p>
+            </div>
+            <div class="planetfact">
+                <p class="Uranus">Uranus is unique among the planets because it rotates on its side, with its axis tilted nearly parallel to its orbit around the Sun. This extreme axial tilt gives Uranus its peculiar seasons, with each pole experiencing 42 years of continuous sunlight followed by 42 years of darkness as the planet orbits the Sun.</p>
+            </div>
+        </div>
+        
+        <div class="planetphoto">
+            <img class="planetpic" src="img/planetsbg.jpg">
+        </div>
+         
+    </div>
+    <div class="break"></div>
+    
+    
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/rellax"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script>
 
         
-   </body>
+        /*====== ANIMATE HEADER ======*/
+        gsap.from('.logo', { opacity: 0, duration: 3, delay: .5, y: 30, ease: 'expo.out' });
+        gsap.from('nav', { opacity: 0, duration: 3, delay: .7, y: 30, ease: 'expo.out' });
+        gsap.from('.bg-video', { opacity: 0, duration: 3, delay: .7, y: 35, ease: 'expo.out', stagger: .2 })
+
+        /*Text*/
+        gsap.from('.content', { opacity: 0, duration: 3, delay: 1.3, y: 35, ease: 'expo.out' });
+        gsap.from('.content h1', { opacity: 0, duration: 3, delay: 1.1, y: 35, ease: 'expo.out' });
+
+        
+
+
+        /*====== SCROLL REVEAL SECTION ======*/
+        const sr = ScrollReveal({
+            duration: 3000,
+            reset: true
+        });
+
+        /*SOLAR SYSTEM*/
+        /*Text*/
+        sr.reveal('.solar-content', { origin: 'left', distance: '250px' });
+
+        /*Title*/
+        sr.reveal('.solartitle', { origin: 'top', distance: '50px'});
+
+        /*Imgs*/
+        sr.reveal('.solarpic', { origin: 'bottom', distance: '50px' });
+
+        /*SUN*/
+        /*Text*/
+        sr.reveal('.sun-content', { origin: 'bottom', distance: '0px' });
+
+        /*Title*/
+        sr.reveal('.suntitle', { origin: 'top', distance: '50px'});
+
+        /*Imgs*/
+        sr.reveal('.sunpic', { origin: 'bottom', distance: '50px' });
+        
+        
+        history.scrollRestoration = "manual";
+
+         $(window).on('beforeunload', function(){
+            $(window).scrollTop(0);
+        }); 
+
+    </script>
+</body>
 </html>
+
