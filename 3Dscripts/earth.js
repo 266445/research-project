@@ -35,7 +35,7 @@ document.getElementById("container3D").appendChild(renderer.domElement);
 
 
 // Camera distance from object
-camera.position.z = objToRender === "earth" ? 2 : 50;
+camera.position.z = objToRender === "earth" ? 250 : 500;
 
 // Lights
 const topLight = new THREE.DirectionalLight(0xffffff, 1);

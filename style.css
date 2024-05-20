@@ -474,4 +474,23 @@ nav ul li a:hover {
     left: 0;
 }
 
+/*Custom Scroll Bar*/
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: transparent; 
+    border-radius: 10px; 
+}
+  
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #242424;
+    border-radius: 10px; 
+}
+  
+  
+
 
