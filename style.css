@@ -119,6 +119,12 @@ nav ul li a:hover {
     clear: both;
 }
 
+.break3 {
+    height: 300px;
+    width: 100%;
+    clear: both;
+}
+
 
 
 /*SOLAR SYSTEM*/
@@ -491,6 +497,53 @@ nav ul li a:hover {
     border-radius: 10px; 
 }
   
-  
+footer {
+    position: relative;
+    background-color: #383838; 
+    color: #fff; 
+    padding: 20px;
+    height: 800px;
+}
 
+.school{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.number {
+    position: absolute;
+    bottom: 80px;
+    left: 100px;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.address {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.map-container {
+    position: absolute;
+    bottom: 150px; 
+    left: 100px; 
+    width: 450px; 
+    height: 450px; 
+    z-index: 999; 
+}
 

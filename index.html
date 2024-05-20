@@ -28,7 +28,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
-                <li><a href="#">LIST</a></li>
+                <li><a href="https://mail.google.com/mail" target="_blank">CONTACT</a></li>
             </ul>
         </nav>
         <div class="content">
@@ -151,7 +151,7 @@
         
         </div>
     </div>
-    <div class="break"></div>
+    <div class="break3"></div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/rellax"></script>
@@ -175,7 +175,7 @@
         /*====== SCROLL REVEAL SECTION ======*/
         const sr = ScrollReveal({
             duration: 3000,
-            reset: true
+            reset: false
         });
 
         
@@ -215,7 +215,7 @@
 
         const srCustom = ScrollReveal({
             duration: 3000,
-            reset: true
+            reset: false
         });
         /*Text*/
         srCustom.reveal('.planet-content2', { origin: 'bottom', distance: '20px' });
@@ -233,7 +233,12 @@
 </body>
 
 <footer>
-
+    <p class="school">My School</p>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5921.985705967578!2d-87.85370798767373!3d42.08620266124385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc7866c15ef0f%3A0x3e8f71b4a0886863!2sGlenbrook%20South%20High%20School!5e0!3m2!1sen!2sus!4v1716170456936!5m2!1sen!2sus" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="number">t: +123-456-7890</p>
+    <p class="address">4000 W Lake Ave, Glenview, IL 60026</p>
 </footer>
 </html>
 
