@@ -84,38 +84,76 @@
         <h1 class="planetstitle">THE PLANETS</h1>
         <div class="planet-content">
             <div class="planetfact">
+                <a href="mercury.html" class="mercury-link">
+                    <div class="mercurypic"> </div>
+                </a>
                 <p class="Mercury">Mercury is the closest planet to the Sun and has the most extreme temperature variations, with surface temperatures ranging from -173°C (-280°F) at night to 427°C (800°F) during the day.</p>
             </div>
             <div class="planetfact">
+                <a href="venus.html" class="venus-link">
+                    <div class="venuspic"> </div>
+                </a>
                 <p class="Venus">Venus has a thick atmosphere composed mainly of carbon dioxide, which traps heat and creates a runaway greenhouse effect. This makes Venus the hottest planet in our solar system, even hotter than Mercury, despite being farther from the Sun.</p>
             </div>
             <div class="planetfact">
+                <a href="earth.html" class="earth-link">
+                    <div class="earthpic"> </div>
+                </a>
                 <p class="Earth">Earth, our home planet, stands out in the solar system for its abundance of liquid water, oxygen-rich atmosphere, and strong magnetic field, which shield it from harmful solar radiation. Its dynamic geology, marked by tectonic activity and diverse ecosystems, fosters a rich tapestry of life forms, from microscopic organisms to majestic creatures.</p>
             </div>
             <div class="planetfact">
+                <a href="mars.html" class="planet-link mars-link">
+                    <div class="marspic"></div>
+                </a>
                 <p class="Mars">Mars is home to the tallest volcano and the deepest canyon in the solar system. Olympus Mons, a shield volcano, towers over the Martian surface at a height of 21.9 km (13.6 mi), while Valles Marineris stretches across 4,000 km (2,500 mi) and reaches depths of up to 7 km (4.3 mi).</p>
             </div>
             <div class="planetfact">
+                <a href="jupiter.html" class="planet-link jupiter-link">
+                    <div class="jupiterpic"></div>
+                </a>
                 <p class="Jupiter">Jupiter is the largest planet in our solar system and has a powerful magnetic field that generates intense radiation belts. Its iconic feature is the Great Red Spot, a massive storm that has been raging for at least 400 years and is larger than Earth.</p>
             </div>
             
         </div>       
 
-        <div class="planet-content2">
-            <div class="planetfact">
-                <p class="Saturn">Saturn is known for its stunning ring system, composed of ice particles ranging in size from tiny grains to large boulders. These rings extend hundreds of thousands of kilometers from the planet's surface but are only about 20 meters thick.</p>
-            </div>
-            <div class="planetfact">
-                <p class="Uranus">Uranus is unique among the planets because it rotates on its side, with its axis tilted nearly parallel to its orbit around the Sun. This extreme axial tilt gives Uranus its peculiar seasons, with each pole experiencing 42 years of continuous sunlight followed by 42 years of darkness as the planet orbits the Sun.</p>
-            </div>
-        </div>
+        
+        
+        
         
         <div class="planetphoto">
             <img class="planetpic" src="img/planetsbg.jpg">
         </div>
+
+        
          
     </div>
+    <div class="break2"></div>
+    <div class="planets2" id="planets2">
+        <div class="planet-content2">
+            <div class="planetfact">
+                <a href="saturn.html" class="planet-link saturn-link">
+                    <div class="saturnpic"></div>
+                </a>
+                <p class="Saturn">Saturn is known for its stunning ring system, composed of ice particles ranging in size from tiny grains to large boulders. These rings extend hundreds of thousands of kilometers from the planet's surface but are only about 20 meters thick.</p>
+            </div>
+            <div class="planetfact">
+                <a href="uranus.html" class="planet-link uranus-link">
+                    <div class="uranuspic"></div>
+                </a>
+                <p class="Uranus">Uranus is unique among the planets because it rotates on its side, with its axis tilted nearly parallel to its orbit around the Sun. This extreme axial tilt gives Uranus its peculiar seasons, with each pole experiencing 42 years of continuous sunlight followed by 42 years of darkness as the planet orbits the Sun.</p>
+            </div>
+            <div class="planetfact">
+                <a href="neptune.html" class="planet-link neptune-link">
+                    <div class="neptunepic"></div>
+                </a>
+                <p class="Neptune">Neptune is known for its strong winds, which are the fastest in the solar system, reaching speeds of up to 2,100 kilometers per hour (1,300 miles per hour). Its deep blue color is due to the presence of methane in its atmosphere. Its appearance is surprisingly similar to that of Uranus.</p>
+            </div>
+        
+        </div>
+    </div>
     <div class="break"></div>
+    
+    
     
     
 
@@ -150,6 +188,8 @@
             reset: true
         });
 
+        
+
         /*SOLAR SYSTEM*/
         /*Text*/
         sr.reveal('.solar-content', { origin: 'left', distance: '250px' });
@@ -169,13 +209,37 @@
 
         /*Imgs*/
         sr.reveal('.sunpic', { origin: 'bottom', distance: '50px' });
+
+
+        
+        /*PLANETS*/
+        /*Text*/
+        sr.reveal('.planet-content', { origin: 'bottom', distance: '20px' });
+        
+        /*Title*/
+        sr.reveal('.planetstitle', { origin: 'top', distance: '50px'});
+        
+
+        /*Imgs*/
+        sr.reveal('.planetpic', { origin: 'bottom', distance: '50px' });
+
+        const srCustom = ScrollReveal({
+            duration: 3000,
+            reset: true
+        });
+        /*Text*/
+        srCustom.reveal('.planet-content2', { origin: 'bottom', distance: '20px' });
+
         
         
+
+        /*
         history.scrollRestoration = "manual";
 
          $(window).on('beforeunload', function(){
             $(window).scrollTop(0);
         }); 
+        */
 
     </script>
 </body>

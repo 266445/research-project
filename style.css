@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #EB972A;
+    color: #BF9B30;
 }
 
 .content {
@@ -90,8 +90,8 @@ nav ul li a:hover {
 }
 
 .content a:hover {
-    color: #EB972A;
-    border-color: #EB972A;;
+    color: #BF9B30;
+    border-color: #BF9B30;
 }
 
 
@@ -108,7 +108,15 @@ nav ul li a:hover {
 
 .break {
     height: 400px;
+    width: 100%;
+    clear: both;
 
+}
+
+.break2 {
+    height: 150px;
+    width: 100%;
+    clear: both;
 }
 
 
@@ -158,7 +166,7 @@ nav ul li a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     z-index: 1;
     -webkit-user-select: none;
@@ -186,7 +194,7 @@ nav ul li a:hover {
     font-size: 50px;
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 700;
-    top: 50px;
+    top: 100px;
     z-index: 2;
 }
 
@@ -251,7 +259,7 @@ nav ul li a:hover {
     font-size: 50px;
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 700;
-    top: 50px;
+    top: 80px;
     z-index: 2;
 }
 
@@ -295,7 +303,7 @@ nav ul li a:hover {
     display: block; 
 }
 
-.Mercury, .Earth, .Mars, .Venus, .Jupiter, .Saturn, .Uranus{
+.Mercury, .Earth, .Mars, .Venus, .Jupiter, .Saturn, .Uranus, .Neptune{
     text-align: left;
     color: white;
     font-family: "PT Sans Caption", sans-serif;
@@ -306,7 +314,164 @@ nav ul li a:hover {
     padding-bottom: 0;
 }
 
+.mercurypic, .venuspic, .earthpic, .uranuspic, .neptunepic, .marspic, .jupiterpic{
+    border: 2px solid black;
+    width: 160px;
+    height: 160px;
+    border-radius: 90%;
+    position: relative;
+    left: 60px;
+    top: -50px;
+    background-size: contain;
+}
+
+.saturnpic{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    left: 60px;
+    top: -10px;
+    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mercurypic {
+    background-image: url(img/mercury.png);
+}
+
+.venuspic{
+    background-image: url(img/venus.png);
+}
+
+.earthpic{
+    background-image: url(img/earth.png);
+}
+
+.uranuspic{
+    background-image: url(img/uranus.png);
+}
+
+.saturnpic{
+    background-image: url(img/saturn.png);
+}
+
+.neptunepic {
+    background-image: url(img/neptune.png);
+}
+
+.marspic {
+    background-image: url(img/mars.png);
+}
+
+.jupiterpic {
+    background-image: url(img/Jupiter.png);
+}
+
+.earth-link, .jupiter-link, .mars-link, .mercury-link, .uranus-link, .neptune-link {
+    display: inline-block;
+    width: 8px;
+    height: 80px;
+    margin-bottom: 60px;
+}
+
+.venus-link {
+    display: inline-block;
+    width: 8px;
+    height: 60px;
+    margin-bottom: 80px;
+}
+
+.saturn-link {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 75px;
+}
+
+.earth-link:after, .jupiter-link:after, .mars-link:after, .mercury-link:after, .venus-link:after, .uranus-link:after, .neptune-link:after{
+    content: "3D model";
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    opacity: 0; 
+    transition: opacity 0.1s ease-in-out;
+    text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,-1px  1px 0 #000,1px  1px 0 #000;
+}
+
+.earth-link:hover .earthpic, 
+.jupiter-link:hover .jupiterpic, 
+.mars-link:hover .marspic, 
+.mercury-link:hover .mercurypic, 
+.venus-link:hover .venuspic, 
+.saturn-link:hover .saturnpic, .saturn-link:hover .saturnpic, .uranus-link:hover .uranuspic, .neptune-link:hover .neptunepic{
+    filter: brightness(0.7);
+}
+
+.earth-link:hover:after, .jupiter-link:hover:after, 
+.mars-link:hover:after, .mercury-link:hover:after, 
+.venus-link:hover:after, .saturn-link:hover:after, .uranus-link:hover:after, .neptune-link:hover:after{
+    opacity: 1;
+}
+
+.saturn-link:after{
+    content: "3D model";
+    position: absolute;
+    top: 45px;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    opacity: 0; 
+    transition: opacity 0.1s ease-in-out;
+    text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000;
+}
+
+.uranus-link:after, .neptune-link:after{
+    content: "3D model";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    opacity: 0; 
+    transition: opacity 0.1s ease-in-out;
+}
+
+.textneptune {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    height: 0px;
+    width: 100%;
+    position: relative;
+    bottom: 100px; 
+    text-align: center;
+}
 
 
+/*3D*/
+#container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 

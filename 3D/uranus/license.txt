@@ -1,0 +1,11 @@
+Model Information:
+* title:	Realistic Uranus
+* source:	https://sketchfab.com/3d-models/realistic-uranus-73b43c2386104e7ab39b972a97d868e6
+* author:	josue.santiagorm22 (https://sketchfab.com/josue.santiagorm22)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Realistic Uranus" (https://sketchfab.com/3d-models/realistic-uranus-73b43c2386104e7ab39b972a97d868e6) by josue.santiagorm22 (https://sketchfab.com/josue.santiagorm22) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
