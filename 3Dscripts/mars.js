@@ -49,6 +49,7 @@ scene.add(ambientLight);
 if (objToRender === "mars") {
   controls = new OrbitControls(camera, renderer.domElement);
   controls.minDistance = 1; 
+  controls.maxDistance = 10;
 }
 
 function animate() {

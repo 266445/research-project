@@ -35,7 +35,7 @@ document.getElementById("container3D").appendChild(renderer.domElement);
 
 
 // Camera distance from object
-camera.position.z = objToRender === "venus" ? 2 : 50;
+camera.position.z = objToRender === "venus" ? 5 : 5;
 
 // Lights
 const topLight = new THREE.DirectionalLight(0xffffff, 1);
@@ -49,6 +49,7 @@ scene.add(ambientLight);
 if (objToRender === "venus") {
   controls = new OrbitControls(camera, renderer.domElement);
   controls.minDistance = 1.5; 
+  controls.maxDistance = 20;
 }
 
 function animate() {

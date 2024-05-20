@@ -35,7 +35,7 @@ document.getElementById("container3D").appendChild(renderer.domElement);
 
 
 // Camera distance from object
-camera.position.z = objToRender === "saturn" ? 1 : 1;
+camera.position.z = objToRender === "saturn" ? 3 : 5;
 
 // Lights
 const topLight = new THREE.DirectionalLight(0xffffff, 1);
@@ -49,6 +49,7 @@ scene.add(ambientLight);
 if (objToRender === "saturn") {
   controls = new OrbitControls(camera, renderer.domElement);
   controls.minDistance = 1.5; 
+  controls.maxDistance = 10;
 }
 
 function animate() {

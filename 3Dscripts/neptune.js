@@ -49,6 +49,7 @@ scene.add(ambientLight);
 if (objToRender === "neptune") {
   controls = new OrbitControls(camera, renderer.domElement);
   controls.minDistance = 15; 
+  controls.maxDistance = 100;
 }
 
 function animate() {
