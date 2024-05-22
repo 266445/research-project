@@ -148,6 +148,7 @@ body{
     width: 100%;
     height: 100vh;
     padding:0 30px;
+    padding-left: 100px;
 }
 
 .solartitle{
@@ -163,12 +164,11 @@ body{
 
 .solar-content {
     position: relative;
-    width: 30%;
-    height: auto;
-
+    width: 40%;
+    height: 30vh;
     margin-bottom: 100px;
-
     z-index: 2; 
+    top: 10%;
 }
 
 .solar-content p {
@@ -200,8 +200,6 @@ body{
 /*THE SUN*/
 .sun {
     position: relative;
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100vh;
 }
@@ -213,14 +211,14 @@ body{
     font-size: 50px;
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 700;
-    top: 100px;
+    top: 10%;
     z-index: 2;
 }
 
 .sun-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 30%;
+    margin-top: 32%;
 }
 
 .sunpic {
@@ -278,26 +276,26 @@ body{
     font-size: 50px;
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 700;
-    top: 80px;
+    top: 15%;
     z-index: 2;
 }
 
 .planet-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 30%;
+    margin-top: 35%;
 }
 
 .planet-content2 {
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .planetpic {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    bottom: 100%;
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -514,8 +512,8 @@ footer {
     position: relative;
     background-color: #383838; 
     color: #fff; 
-    padding: 20px;
     height: 800px;
+    padding: 100px;
 }
 
 .school{
@@ -524,83 +522,465 @@ footer {
     text-decoration: none;
     color: white;
     font-size: 30px;
-    position: absolute;
-    left: 100px;
-    top: 100px;
+    position: relative;
+
 }
 
 .number {
-    position: absolute;
-    bottom: 80px;
-    left: 100px;
+    position: relative;
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: white;
     font-size: 20px;
+
 }
 
 .address {
-    position: absolute;
-    bottom: 40px;
-    left: 100px;
+    position: relative;
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: white;
     font-size: 20px;
+
 }
 
-.map-container {
-    position: absolute;
-    bottom: 150px; 
-    left: 100px; 
-    width: 450px; 
-    height: 450px; 
-    z-index: 999; 
+.social {
+    position: relative;
+    left: 70%;
+    width: 25%;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    top: -100%;
 }
+
+.map-container iframe {
+    margin-bottom: 1%;
+}
+
+
 
 /* RESPONSIVE */
 /* For small devices  */
-@media (max-width: 767px) {
-.solar-content{
-    width:100%;
-}
-.content h1 {
-    font-size: 100px;
-}
+@media (max-width: 900px) {
 
-.content a {
-    font-size: 18px;
-    padding: 10px 40px; 
-    margin-top: 10px; 
-}
-}
+    /*NAVBAR*/
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        padding: 10px 8%;
+        z-index: 999;
+    }
+    
+    .navbar .logo {
+        width: 60px;
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    
+    .navbar-brand {
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    
+    
+    .navbar-nav .nav-item {
+        margin-left: 0px;
+        margin-top: 0px;
+        padding-left: 32px;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    
+    .navbar-nav .nav-link {
+        font-family: "PT Sans Caption", sans-serif !important; 
+        font-weight: bold !important; 
+        text-decoration: none !important;
+        color: #fff !important; 
+        font-size: 17px !important;
+        
+    }
+    
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+        color: #BF9B30 !important; 
+        
+    }
+    
+    .container-fluid {
+        padding: 0px;
+    }
+
+    /*SOLAR SYSTEM*/
+
+    .solar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .solartitle{
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+        top: 10%;
+        z-index: 2;
+    }
+
+    .solar-content {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 20%;
+        margin-bottom: 100px;
+        z-index: 2; 
+    }
+
+    .solar-content p {
+        text-align: left;
+        color: white;
+        font-size: 20px;
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+        margin-top: 30%;
+        text-align: center;
+    }
+
+    .solarpic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        pointer-events: none;
+        -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        
+    }
+
+
+    /*THE SUN*/
+    .sun {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .suntitle{
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+        top: 15%;
+        z-index: 2;
+    }
+
+    .sun-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 40%;
+    }
+
+    .sunpic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 1;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        pointer-events: none;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)75%);
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)75%);
+    }
 
 
 
-/* For medium devices  */
-@media (min-width: 768px) and (max-width: 991px) {
-.content h1 {
-    font-size: 120px; 
-}
+    .sunfact {
+        width: 80%; 
+        position: relative;
+        font-size: 15px;
+        display: block; 
+        
+    }
 
-.content a {
-    font-size: 20px; 
-    padding: 12px 50px; 
-    margin-top: 15px; 
-}
-}
+    .fact1, .fact2, .fact3, .fact4, .fact5 {
+        text-align: center;
+        color: white;
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0px; 
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
-/* For large devices  */
-@media (min-width: 992px) {
-.content h1 {
-    font-size: 160px; 
-}
+    .fact2, .fact3, .fact4, .fact5 {
+        margin-bottom: 5%;
+    }
 
-.content a {
-    font-size: 24px; 
-    padding: 14px 70px; 
-    margin-top: 20px; 
-}
+    /*THE PLANETS*/
+    .planets {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .planetstitle{
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+        top: 80px;
+        z-index: 2;
+    }
+
+    .planet-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30%;
+    }
+
+    .planet-content2 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    .planet-content,
+    .planet-content2 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .planetpic,
+    .planetfact {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .planetpic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 1;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        pointer-events: none;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)75%);
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)75%);
+    }
+
+
+
+    .planetfact {
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%; 
+        position: relative;
+        font-size: 15px;
+        margin-top: 20px; 
+        display: block; 
+    }
+
+    .Mercury, .Earth, .Mars, .Venus, .Jupiter, .Saturn, .Uranus, .Neptune{
+        text-align: left;
+        color: white;
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0px; 
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .mercurypic, .venuspic, .earthpic, .uranuspic, .neptunepic, .marspic, .jupiterpic{
+        border: 2px solid black;
+        width: 160px;
+        height: 160px;
+        border-radius: 90%;
+        position: relative;
+        left: 60px;
+        top: -50px;
+        background-size: contain;
+    }
+
+    .saturnpic{
+        width: 160px;
+        height: 160px;
+        position: relative;
+        left: 60px;
+        top: -10px;
+        object-fit: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .earth-link, .jupiter-link, .mars-link, .mercury-link, .uranus-link, .neptune-link {
+        display: inline-block;
+        width: 8px;
+        height: 80px;
+        margin-bottom: 60px;
+    }
+
+    .venus-link {
+        display: inline-block;
+        width: 8px;
+        height: 60px;
+        margin-bottom: 80px;
+    }
+
+    .saturn-link {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 75px;
+    }
+
+    .earth-link:after, .jupiter-link:after, .mars-link:after, .mercury-link:after, .venus-link:after, .uranus-link:after, .neptune-link:after{
+        content: "3D model";
+        position: absolute;
+        top: 28px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        opacity: 0; 
+        transition: opacity 0.1s ease-in-out;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,-1px  1px 0 #000,1px  1px 0 #000;
+    }
+
+    .earth-link:hover .earthpic, 
+    .jupiter-link:hover .jupiterpic, 
+    .mars-link:hover .marspic, 
+    .mercury-link:hover .mercurypic, 
+    .venus-link:hover .venuspic, 
+    .saturn-link:hover .saturnpic, .saturn-link:hover .saturnpic, .uranus-link:hover .uranuspic, .neptune-link:hover .neptunepic{
+        filter: brightness(0.7);
+    }
+
+    .earth-link:hover:after, .jupiter-link:hover:after, 
+    .mars-link:hover:after, .mercury-link:hover:after, 
+    .venus-link:hover:after, .saturn-link:hover:after, .uranus-link:hover:after, .neptune-link:hover:after{
+        opacity: 1;
+    }
+
+    .saturn-link:after{
+        content: "3D model";
+        position: absolute;
+        top: 45px;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        opacity: 0; 
+        transition: opacity 0.1s ease-in-out;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000;
+    }
+
+    .uranus-link:after, .neptune-link:after{
+        content: "3D model";
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        opacity: 0; 
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .textneptune {
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        height: 0px;
+        width: 100%;
+        position: relative;
+        bottom: 100px; 
+        text-align: center;
+    }
+
+
+
+
+
+    .footer {
+        height: auto; 
+        padding-bottom: 20px; 
+        padding-right: 20px;
+    }
+
+    .school {
+        position: relative;
+        text-align: center;
+        bottom: 3%;
+    }
+
+    .address {
+        position: relative;
+        margin-bottom: 3%;
+    }
+
+    .number {
+        position: relative;
+        margin-bottom: 3%;
+    }
+
+    .social {
+        position: static; 
+        display: block;
+        margin-top: 20px; 
+        text-align: center;
+    }
+    
+    .map-container iframe{
+        position: relative;
+        width: 100%;
+        margin-bottom: 5%;
+    }
 }
