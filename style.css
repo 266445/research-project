@@ -129,6 +129,7 @@ a {
 }
 
 .break2 {
+    position: relative;
     height: 150px;
     width: 100%;
     clear: both;
@@ -324,6 +325,7 @@ a {
     margin-top: 20px; 
     display: block; 
     padding-top: 0;
+    text-align: center;
 }
 
 .Mercury, .Earth, .Mars, .Venus, .Jupiter, .Saturn, .Uranus, .Neptune{
@@ -395,7 +397,6 @@ a {
     margin-bottom: 60px;
     position: relative;
     
-    
 }
 
 .venus-link {
@@ -417,7 +418,6 @@ a {
     position: relative;
     font-family: "PT Sans Caption", sans-serif;
     bottom: 60%;
-    left: 25%;
     font-weight: 700;
     text-decoration: none;
     color: white;
@@ -432,7 +432,6 @@ a {
     content: "3D model";
     position: relative;
     bottom: 60%;
-    left: 25%;
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 700;
     text-decoration: none;
@@ -447,7 +446,6 @@ a {
     content: "3D model";
     position: relative;
     bottom: 70%;
-    left: 25%;
     transform: translate(-50%, -50%);
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 700;
@@ -573,7 +571,7 @@ footer {
 
 /* RESPONSIVE */
 /* For small devices  */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 
     .content h1 {
         font-size: 10vw;
@@ -832,12 +830,6 @@ footer {
         margin-top: 10%;
     }
 
-    .planetpic,
-    .planetfact {
-        width: 100%;
-        margin-top: 10%;
-    }
-
     .planetpic {
         position: absolute;
         top: 0;
@@ -886,10 +878,10 @@ footer {
         height: 50vw;
         border-radius: 90%;
         position: relative; 
-        transform: translateX(30%);
         background-size: contain;
-        top: 80%;
+        top: 70%;
     }
+
 
     .venuspic {
         border: 2px solid black;
@@ -897,9 +889,8 @@ footer {
         height: 50vw;
         border-radius: 90%;
         position: relative; 
-        transform: translateX(30%);
         background-size: contain;
-        top: 300%;
+        top: 100%;
     }
 
     .earthpic {
@@ -908,9 +899,8 @@ footer {
         height: 50vw;
         border-radius: 90%;
         position: relative; 
-        transform: translateX(30%);
         background-size: contain;
-        top: 400%;
+        top: 105%;
     }
 
     .marspic {
@@ -919,63 +909,49 @@ footer {
         height: 50vw;
         border-radius: 90%;
         position: relative; 
-        transform: translateX(30%);
         background-size: contain;
-        top: 250%;
+        top: 100%;
     }
 
     
 
     .saturnpic{
         border: 2px solid black;
-        width: 90vw;
+        width: 70vw;
         height: 75vw;
         border-radius: 90%;
         position: relative; 
         background-size: 60%;
         background-position-x: 35%;
         background-position-y: 40%;
-        transform: translateX(-3.5%)
+        transform: translateX(7%);
+        top: 80%;
     }
 
     
 
     .earth-link, .jupiter-link, .mars-link, .mercury-link, .uranus-link, .neptune-link {
         display: inline-block;
-        width: 8px;
-        height: 80px;
+        width: 50vw;
+        height: 50vw;
         margin-bottom: 60px;
     }
 
     .venus-link {
         display: inline-block;
-        width: 8px;
-        height: 60px;
+        width: 50vw;
+        height: 50vw;
         margin-bottom: 80px;
     }
 
     .saturn-link {
         display: inline-block;
-        width: 80px;
-        height: 80px;
+        width: 70vw;
+        height: 75vw;
         margin-bottom: 75px;
     }
 
-    .earth-link:after, .jupiter-link:after, .mars-link:after, .mercury-link:after, .venus-link:after, .uranus-link:after, .neptune-link:after{
-        content: "3D model";
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "PT Sans Caption", sans-serif;
-        font-weight: 700;
-        text-decoration: none;
-        color: white;
-        font-size: 17px;
-        opacity: 0; 
-        transition: opacity 0.1s ease-in-out;
-        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,-1px  1px 0 #000,1px  1px 0 #000;
-    }
+    
 
     .earth-link:hover .earthpic, 
     .jupiter-link:hover .jupiterpic, 
@@ -992,11 +968,42 @@ footer {
         opacity: 1;
     }
 
+    .earth-link:after, .jupiter-link:after, .mars-link:after, .mercury-link:after, .uranus-link:after, .neptune-link:after{
+        content: "";
+        position: relative;
+        font-family: "PT Sans Caption", sans-serif;
+        bottom: 60%;
+        left: 25%;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+        font-size: clamp(0.625rem, 1vw, 1.063rem);
+        opacity: 0; 
+        transition: opacity 0.1s ease-in-out;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,-1px  1px 0 #000,1px  1px 0 #000;
+    }
+    
+    .venus-link:after
+    {
+        content: "";
+        position: relative;
+        bottom: 60%;
+        left: 25%;
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        opacity: 0; 
+        transition: opacity 0.1s ease-in-out;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,-1px  1px 0 #000,1px  1px 0 #000;
+    }
+    
     .saturn-link:after{
-        content: "3D model";
-        position: absolute;
-        top: 45px;
-        left: 49%;
+        content: "";
+        position: relative;
+        bottom: 70%;
+        left: 25%;
         transform: translate(-50%, -50%);
         font-family: "PT Sans Caption", sans-serif;
         font-weight: 700;
@@ -1007,34 +1014,9 @@ footer {
         transition: opacity 0.1s ease-in-out;
         text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,-1px  1px 0 #000, 1px  1px 0 #000;
     }
+    
 
-    .uranus-link:after, .neptune-link:after{
-        content: "3D model";
-        position: absolute;
-        top: 30px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "PT Sans Caption", sans-serif;
-        font-weight: 700;
-        text-decoration: none;
-        color: white;
-        font-size: 17px;
-        opacity: 0; 
-        transition: opacity 0.1s ease-in-out;
-    }
-
-    .textneptune {
-        font-family: "PT Sans Caption", sans-serif;
-        font-weight: 700;
-        text-decoration: none;
-        color: white;
-        font-size: 30px;
-        height: 0px;
-        width: 100%;
-        position: relative;
-        bottom: 100px; 
-        text-align: center;
-    }
+    
 
 
 
