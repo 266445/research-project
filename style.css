@@ -141,7 +141,16 @@ a {
     clear: both;
 }
 
+.icons i{
+    color: white;
+    margin-right: 20px;
+    font-size: 40px;
+}
 
+.icons i:hover {
+    color: #BF9B30;
+    border-color: #BF9B30;
+}
 
 /*SOLAR SYSTEM*/
 
@@ -288,13 +297,13 @@ a {
     display: flex;
     justify-content: space-between;
     margin-top: 35%;
+   
 }
 
 .planet-content2 {
     display: flex;
     justify-content: space-between;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 15%;
 }
 
 .planetpic {
@@ -322,10 +331,10 @@ a {
     width: 15%; 
     position: relative;
     font-size: 15px;
-    margin-top: 20px; 
     display: block; 
     padding-top: 0;
     text-align: center;
+    top: 25%;
 }
 
 .Mercury, .Earth, .Mars, .Venus, .Jupiter, .Saturn, .Uranus, .Neptune{
@@ -560,7 +569,7 @@ footer {
 
 }
 
-.social {
+.socialcontainer {
     position: relative;
     left: 70%;
     width: 25%;
@@ -1075,7 +1084,7 @@ footer {
         margin-bottom: 3%;
     }
 
-    .social {
+    .socialcontainer {
         position: static; 
         display: block;
         margin-top: 20px; 

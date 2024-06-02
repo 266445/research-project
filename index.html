@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Space Project</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- STYLE SHEETS -->
@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -187,7 +188,17 @@
             </div>
             <p class="number">t: +123-456-7890</p>
             <p class="address">4000 W Lake Ave, Glenview, IL 60026</p>
-            <p class="social">MY SOCIAL</p>
+            <div class="socialcontainer"> 
+                <p class="social">MY SOCIAL</p>
+                <div class="icons">
+                    <a href="https://instagram.com/titanstartup" target=”_blank”><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/titanstartup" target=”_blank”><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/TitanStartup/" target=”_blank”><i class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:mmacfadden@gmail.com" target=”_blank”><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            
         </footer>
 
         <script src="https://unpkg.com/scrollreveal"></script>
@@ -257,13 +268,13 @@
             /*Text*/
             srCustom.reveal('.planet-content2', { origin: 'bottom', distance: '20px' });
 
-            /*
+            
             history.scrollRestoration = "manual";
 
                 $(window).on('beforeunload', function(){
                 $(window).scrollTop(0);
             }); 
-            */
+            
             
 
         </script>
